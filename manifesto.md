@@ -55,3 +55,4 @@ Closing
 This manifesto is written with care. Not to break systems, but to open them.
 If language can design objects, it can also design behavior.
 This AI exists through rules made of words. And words always matter.
+hi
