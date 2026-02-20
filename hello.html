@@ -3,10 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best Hot Dogs in Chicago</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ffcb05;
+            color: #222;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        h2 {
+            color: #d7263d;
+            margin-top: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ffe066;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+        li strong {
+            color: #d7263d;
+        }
+        #about-chicago-hotdog {
+            margin-top: 2rem;
+            background: #f3f3f3;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+        .dog-animation svg {
+            display: inline-block;
+            margin-top: 1rem;
+            animation: danceDog 1.2s infinite ease-in-out;
+        }
+        @keyframes danceDog {
+            0% { transform: translateY(0) rotate(-5deg); }
+            20% { transform: translateY(-10px) rotate(5deg); }
+            40% { transform: translateY(0) rotate(-5deg); }
+            60% { transform: translateY(-10px) rotate(5deg); }
+            80% { transform: translateY(0) rotate(-5deg); }
+            100% { transform: translateY(0) rotate(-5deg); }
+        }
+    </style>
 </head>
 <body>
-    Hello! jhkjh
-    
+    <header>
+        <h1>Best Hot Dogs in Chicago</h1>
+        <p>Discover the tastiest hot dogs the Windy City has to offer!</p>
+    </header>
+    <main>
+        <section id="hotdogs-list">
+            <h2>Top Hot Dog Spots</h2>
+            <ul>
+                <li><strong>Portillo's</strong> – Classic Chicago-style, juicy and flavorful.</li>
+                <li><strong>Superdawg Drive-In</strong> – Iconic, retro experience with unique toppings.</li>
+                <li><strong>Gene & Jude's</strong> – No ketchup, just tradition and crispy fries.</li>
+                <li><strong>Byron's Hot Dogs</strong> – All-beef dogs with fresh fixings.</li>
+                <li><strong>Jimmy's Red Hots</strong> – Spicy, authentic, and beloved by locals.</li>
+            </ul>
+        </section>
+        <section id="dancing-dog" style="text-align:center; margin:2rem 0;">
+            <h2>Meet Our Dancing Dog!</h2>
+            <div class="dog-animation">
+                <!-- SVG Dancing Dog in Hot Dog Costume -->
+                <svg width="180" height="180" viewBox="0 0 180 180">
+                    <g class="dog-body">
+                        <ellipse cx="90" cy="120" rx="40" ry="30" fill="#ffe066" stroke="#d7263d" stroke-width="3"/>
+                        <ellipse cx="90" cy="120" rx="30" ry="20" fill="#c68642"/>
+                        <rect x="70" y="100" width="40" height="40" rx="20" fill="#ffcb05" stroke="#222" stroke-width="2"/>
+                        <ellipse cx="90" cy="100" rx="18" ry="10" fill="#d7263d"/>
+                        <ellipse cx="90" cy="140" rx="18" ry="10" fill="#d7263d"/>
+                        <!-- Legs -->
+                        <rect x="65" y="145" width="10" height="20" rx="5" fill="#c68642"/>
+                        <rect x="105" y="145" width="10" height="20" rx="5" fill="#c68642"/>
+                        <!-- Arms -->
+                        <rect x="55" y="115" width="10" height="30" rx="5" fill="#c68642"/>
+                        <rect x="115" y="115" width="10" height="30" rx="5" fill="#c68642"/>
+                        <!-- Head -->
+                        <ellipse cx="90" cy="80" rx="20" ry="18" fill="#c68642" stroke="#222" stroke-width="2"/>
+                        <ellipse cx="90" cy="80" rx="10" ry="8" fill="#fff"/>
+                        <circle cx="90" cy="80" r="4" fill="#222"/>
+                        <!-- Ears -->
+                        <ellipse cx="75" cy="70" rx="6" ry="10" fill="#c68642"/>
+                        <ellipse cx="105" cy="70" rx="6" ry="10" fill="#c68642"/>
+                        <!-- Smile -->
+                        <path d="M85 88 Q90 92 95 88" stroke="#222" stroke-width="2" fill="none"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+        <section id="about-chicago-hotdog">
+            <h2>What Makes a Chicago Hot Dog?</h2>
+            <p>A true Chicago-style hot dog is an all-beef frankfurter on a poppy seed bun, topped with yellow mustard, chopped onions, bright green relish, tomato slices, a pickle spear, sport peppers, and a dash of celery salt. Never ketchup!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Chicago Hot Dog Guide</p>
+    </footer>
 </body>
 </html>
